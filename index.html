@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>email</title>
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    @font-face {
+        font-family: 'Poppins', sans-serif;
+        src: url();
+    }
+</style>
+
+<body style="box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+     font-family: 'Poppins',Arial, sans-serif;">
+
+    <div>
+        <main style="background-color: #F2F4F7;height:100%">
+            <table style="width: 100%; border-collapse: collapse; font-size:0.9em;">
+                <!-- En-tête -->
+                <thead style="background: #2892F5;  height: 20em; text-align: center;">
+
+                    <tr>
+                        <td colspan="2" style="background: #2892F5; color: #fff; height: 16em; text-align: center;">
+                            <h3 style="font-size: 1.3em; font-weight: 500;  width: 100%; margin: auto;">
+                                Contrat de location : <i><svg width="15" height="15" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="15" cy="15" r="15" fill="white" />
+                                        <path
+                                            d="M30 15C30 23.2843 23.2843 30 15 30C6.71571 30 0 23.2843 0 15C0 6.71571 6.71571 0 15 0C23.2843 0 30 6.71571 30 15ZM13.265 22.9424L24.394 11.8133C24.7719 11.4354 24.7719 10.8227 24.394 10.4448L23.0254 9.07621C22.6475 8.69825 22.0348 8.69825 21.6568 9.07621L12.5806 18.1523L8.34321 13.9149C7.9653 13.537 7.35254 13.537 6.97458 13.9149L5.60601 15.2834C5.2281 15.6613 5.2281 16.2741 5.60601 16.652L11.8963 22.9423C12.2743 23.3203 12.887 23.3203 13.265 22.9424Z"
+                                            fill="#03A84E" />
+                                    </svg>
+                                </i>Signé<br><a href="{{$applicationInfo['link_detail_annonce']}}"
+                                    style="color: white; font-weight: bold; text-decoration: none;"> [Titre de
+                                    l’annonce]</a>
+                            </h3>
+                        </td>
+                    </tr>
+
+                    <!-- Salutation -->
+                    <tr height="0">
+                        <td colspan="2" style="padding: 0;">
+                            <p
+                                style="background: #fff;  text-align: left;margin:0 auto;padding:2em;padding-top:2.5em !important;width:80%;">
+                                Bonjour
+                                <span style="font-weight: 700;">[Prénom du propriétaire],</span>,
+                            </p>
+                        </td>
+                    </tr>
+                </thead>
+
+                <!-- Corps principal -->
+                <tbody style="background:#F2F4F7;">
+
+
+                    <!-- Nouvelle candidature -->
+                    <tr>
+                        <td colspan="2" style="padding: 0;">
+                            <p
+                                style="line-height:2em;background: #fff;  text-align: left;padding:0.5em 2em;padding-bottom:0 !important;margin:0 auto;width:80%;">
+                                Bonne nouvelle ! Le candidat pour l’annonce<b><a
+                                        href="{{$applicationInfo['link_detail_annonce']}}"
+                                        style="color: black; font-weight: bold; text-decoration: none;"> [Titre de
+                                        l’annonce]</a></b> a signé le contrat de location.
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="padding: 0;">
+                            <p
+                                style="line-height:2em;background: #fff;padding-top:2.5em !important;  text-align: left;padding:0.5em 2em;padding-bottom:0 !important;margin:0 auto;width:80%;">
+                                Vous pouvez maintenant le consulter en cliquant sur le bouton ci-dessous : <br>
+                                <b><a href="{{$applicationInfo['link_detail_annonce']}}"
+                                        style="color: black; font-weight: bold; text-decoration: none;">[Consulter le
+                                        contrat]</a></b>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="padding: 0;">
+                            <p
+                                style="line-height:2em;background: #fff;padding-top:2.5em !important;  text-align: left;padding:0.5em 2em;padding-bottom:0 !important;margin:0 auto;width:80%;">
+                                <span style="font-size : 1.05em;">Si vous avez des questions ou besoin de précisions,
+                                    vous pouvez contacter le candidat directement :</span>
+                            </p>
+                        </td>
+
+                    </tr>
+
+                    <!-- Détails du candidat -->
+                    <tr>
+                        <td colspan="2" style="padding: 0;">
+                            <div style="background: #fff;  text-align: left;margin:0 auto;padding:0.5em 2em;width:80%;">
+
+                                <ul style="margin-left:1.5em;margin-top:0;margin-bottom:0; padding: 0;">
+
+                                    <li style="line-height:2em;padding:0.3em 0; font-weight: 700;"><b>Téléphone</b>
+                                        <span>: [Numéro du candidat]</span>
+                                    </li>
+                                    <li style="line-height:2em;padding:0.3em 0; font-weight: 700;"><b>Email</b>
+                                        <span>: [Email du candidat]</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td colspan="2" style="padding: 0;">
+                            <p
+                                style="line-height:2em;background: #fff;padding-top:2.5em !important; text-align: left;padding:0.5em 2em;padding-bottom:0 !important;margin:0 auto;width:80%;">
+                                Nous restons également à votre disposition pour toute autre question.
+                            </p>
+                        </td>
+
+                    </tr>
+
+                    <!-- Remerciements -->
+                    <tr>
+                        <td colspan="2" style="padding: 0; text-align: center;">
+                            <div
+                                style="background: #fff;padding-top:4em !important; margin-bottom:4em;  text-align: left;margin:0 auto;padding:3em 2em;width:80%;">
+
+                                <p style="margin:0 auto;width:max-content;padding-top:1em !important;">Cordialement</p>
+                                <p style="margin:0 auto;width:max-content;padding-top:1em !important;font-weight: 700;">
+                                    L'équipe Bailti</p>
+                                <div style="width: max-content;margin:0 auto;">
+                                    <img src="https://bailti.fr/img/blue-logo.png" alt="Logo"
+                                        style="width: 8.5em; height: 8.5em;max-height: max-content; object-fit: contain;margin:1em auto;">
+                                </div>
+
+                                <a href="https://www.bailti.fr/"
+                                    style="color: #2892F5; font-weight: 600; text-decoration: none;margin:0 auto;width:max-content;">
+                                    <p style="margin:0 auto;width:max-content;">https://www.bailti.fr/</p>
+                                </a>
+                            </div>
+
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+
+ 
+</body>
+
+</html>
